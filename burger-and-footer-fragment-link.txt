@@ -1,0 +1,12 @@
+LINKS
+--------------
+<link rel="stylesheet" href="/content/dam/infosys-web/en/the-economist-group/css/style.css">
+<script src="/content/dam/infosys-web/en/the-economist-group/js/custom.js"></script>
+
+BURGER MENU
+--------------------
+/content/experience-fragments/infosys-web/burger-menu/burger-menu-expfragment/burger-menu-en
+
+FOOTER
+--------------
+/content/experience-fragments/infosys-web/footer/footer-experience-fragment/footer

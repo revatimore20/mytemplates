@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blank Template | Infosys</title>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-header.js"></script>
+<link rel="stylesheet" href="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-header.css">
+<script src="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-dependencies.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+<style>
+.snip1543 {
+  background-color: #fff;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  /* max-width: 315px;
+  min-width: 230px; */
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.snip1543 *,
+.snip1543 *:before,
+.snip1543 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1543 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1543:before,
+.snip1543:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #007cc3 ;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1543:before {
+  -webkit-transform: skew(30deg) translateX(-80%);
+  transform: skew(30deg) translateX(-80%);
+}
+
+.snip1543:after {
+  -webkit-transform: skew(-30deg) translateX(-70%);
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.snip1543 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 25px 40% 25px 20px;
+}
+
+.snip1543 figcaption:before,
+.snip1543 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000102;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip1543 figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-100%);
+  transform: skew(30deg) translateX(-100%);
+}
+
+.snip1543 figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-90%);
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.snip1543 h3,
+.snip1543 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1543 h3 {
+  font-family: 'tungstenw05-medium';
+  font-size: 45px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.snip1543 p {
+  font-family: 'myriad-pro';
+  padding-top: 10px;
+}
+
+.snip1543 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1543:hover h3,
+.snip1543.hover h3,
+.snip1543:hover p,
+.snip1543.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.snip1543:hover:before,
+.snip1543.hover:before {
+  -webkit-transform: skew(30deg) translateX(-20%);
+  transform: skew(30deg) translateX(-20%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.snip1543:hover:after,
+.snip1543.hover:after {
+  -webkit-transform: skew(-30deg) translateX(-10%);
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.snip1543:hover figcaption:before,
+.snip1543.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-40%);
+  transform: skew(30deg) translateX(-40%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1543:hover figcaption:after,
+.snip1543.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-30%);
+  transform: skew(-30deg) translateX(-30%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}    
+figcaption .figcaption-innr-con{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row py-75">
+            <h1 class="main-title text-center">Image Hover Effect</h1>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <figure class="snip1543">
+                  <img src="images/colleagues-having-business-meeting-together.jpg" alt="" />
+                  <figcaption>
+                    <div class="figcaption-innr-con">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                   
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+            </div>  
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <figure class="snip1543">
+                <img src="images/colleagues-planning-business-project.jpg" alt="" />
+                  <figcaption>
+                    <div class="figcaption-innr-con">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <figure class="snip1543"><img src="images/close-up-businesspeople-stacking-hands-meeting-office.jpg" alt="" />
+                  <figcaption>
+                    <div class="figcaption-innr-con">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+            </div>
+          </div>
+    </div>
+ 
+
+    
+   
+<script src="js/custom.js"></script>
+<link rel="stylesheet" href="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-footer.css">
+<script src="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-footer.js"></script>
+ <script type="text/javascript" src="https://play.vidyard.com/embed/v4.js"></script>    
+ <script>
+
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
+ </script>    
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blank Template | Infosys</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-header.js"></script>
+  <link rel="stylesheet" href="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-header.css">
+  <script src="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-dependencies.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+body{
+ font-family: 'myriad-pro';
+    }
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 25px;
+    position: relative;
+}
+#accordion .panel:before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    border: 1px dashed #6e8898;
+    position: absolute;
+    top: 25px;
+    left: 18px;
+}
+#accordion .panel:last-child:before{ display: none; }
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    position: relative;
+    font-family: 'myriad-pro';
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 10px 30px 10px 60px;
+    margin: 0;
+    background: #f5f5f5;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1d3557;
+    border-radius: 20px;
+    position: relative;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    width: 40px;
+    height: 100%;
+    line-height: 40px;
+    background: #061838;
+    border: 1px solid #061838;
+    border-radius: 3px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:before{
+    content: "\f105";
+    background: #fff;
+    border: 1px solid #6e8898;
+    color: #000;
+}
+#accordion .panel-body{
+    padding: 10px 30px 10px 30px;
+    margin-left: 40px;
+    background: #fff;
+    border-top: none;
+    color: #6f6f6f;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: 'myriad-pro';
+}
+.image-icon{
+    width: 60px;
+    padding-right: 15px;  
+   position: relative;
+   z-index: 1;
+}
+.img-span{
+position: relative;    
+}
+.img-span:after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffe52b;
+    left: 10px;
+    border-radius: 40px;
+    top: 10px;
+    z-index: 0; 
+}
+#accordion-two .panel-title a {
+font-size: 21px;    
+}
+#accordion-two .panel-default>.panel-heading{
+background-color: transparent;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+border-color: transparent;  
+}
+#accordion-two .panel-default>.panel-heading+.panel-collapse>.panel-body{
+border-color: transparent;    
+}
+#accordion-two .panel-default{
+border-color: transparent;   
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+.panel-body-content .img-div img{
+width: 100px;    
+}
+.panel-body-content{
+display: flex;    
+align-items: center;
+gap: 20px;
+padding: 10px 0 20px 0;
+border-bottom: 1px solid #dfdfdf;
+}
+.profile-title{
+font-size: 20px;
+font-weight: 600;    
+}
+.icon-div{
+background: #ffe52b;
+border-radius: 100px;
+height: 45px;
+width: auto;
+}
+.icon-div .fa-arrow-right{
+padding: 13px 15px;    
+}
+  </style>
+</head>
+
+<body>
+  <a href="#main-cnt" class="skip-main-cnt" tabindex="1" title="Skip to main content">Skip to main content</a> <a
+    href="#footer" class="skip-footer" title="Skip to footer">Skip to footer</a>
+  <header class="header">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a class="d-inline-block infy-logo" href="/"
+            title="Go to Infosys Home" aria-label="Go to Infosys Home">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="86px" height="32px" viewBox="0 309.9 595.3 224" enable-background="new 0 309.9 595.3 224"
+              xml:space="preserve" class="logo">
+              <path id="logo" fill="#fff" d="M577.1,347.4c9.7,0,18.2-8,18.2-18.2c0-9.7-8-18.2-18.2-18.2c-9.7,0-18.2,8-18.2,18.2
+            C559.4,339.4,567.4,347.4,577.1,347.4L577.1,347.4z M562.1,329.3c0-8.4,7.1-15.5,15.5-15.5c8.4,0,15.5,7.1,15.5,15.5
+            c0,8.4-7.1,15.5-15.5,15.5C568.7,344.8,562.1,337.7,562.1,329.3L562.1,329.3z M570.5,338.6h3.5v-8h4l3.1,7.5h4l-3.5-8.4
+            c1.3-0.4,3.1-1.3,3.1-4.9c0-5.3-4-6.2-7.5-6.2h-6.2v19.9H570.5z M574,322.6h4c2.2,0,3.1,0.9,3.1,2.7s-1.3,2.7-3.1,2.7h-4V322.6
+            L574,322.6z M0,337.2L0,337.2V316h21.3v21.3l0,0v134.2v0.4v20.8H0v-21.3V471V337.2L0,337.2z M216.6,428.5
+            c0.4,32.3,20.4,58,44.7,57.6c24.4-0.4,43.4-27,43-58.9c-0.4-32.3-20.4-58-44.7-57.6C235.2,370,216.1,396.1,216.6,428.5L216.6,428.5z
+             M392.9,389.5c0.4,1.3-0.9-1.8-0.9-1.8L392.9,389.5L392.9,389.5z M407.5,522.8c0.9-1.8,2.2-4,4-7.5L407.5,522.8L407.5,522.8z
+             M408.8,378.4c0.4,0.9,0.4,1.3,0.9,2.2l7.1,17.7L408.8,378.4L408.8,378.4z M319.3,467c13.3,12,24.8,18.2,40.3,18.2
+            c15.5,0,29.2-7.5,29.2-22.1c0-12.4-10.6-19.5-30.1-27.5c-16.4-7.1-28.3-12-35-22.1c0.9,4.4,1.3,8.9,1.3,13.7
+            c0,39.4-28.8,71.3-64.2,71.3s-64.2-31.9-64.2-71.3c0-23.9,10.6-44.7,26.6-58h-43.4v102.3v0.4v21.3h-19v-20.4c0-0.4,0-0.9,0-0.9
+            V369.1h-16.8v-12.8h17.3c2.2-26.1,18.2-40.7,40.7-40.7c14.6,0,22.6,1.3,27,3.5v17.7c0,1.3,0,2.2,0,2.2h-0.9
+            c-7.1-6.6-13.7-11.1-29.7-11.1c-12.8,0-21.3,10.2-18.2,28.3h72.2c3.1-0.4,6.2-0.9,9.3-0.9c25.7,0,47.8,16.8,58,41.2
+            c0-1.3,0-2.7,0-4.4c0-25.2,24.8-36.3,50-36.3c0.9,0,1.8,0,2.7,0c8.9,0,21.7,2.7,29.7,4.9l7.1,17.3l8,19.9l21.3,53.1l2.7,8.4l2.7-8.4
+            l27.5-67.8c4.9-18.6,25.2-26.6,46.9-26.6c11.1,0,19,1.3,28.8,4.9V382c-12-8.9-20.4-13.7-34.1-13.7c-12,0-26.1,5.3-26.1,23
+            c-0.4,13.3,7.5,15.5,31,27c19,8.4,36.8,17.3,36.8,38.5c0,35.4-35,41.6-51.8,41.6c-15.1,0-29.2-3.5-36.8-10.2v-23.5l1.3,0.9
+            c13.7,12.8,26.1,19.5,41.6,19.5s29.2-7.5,29.2-22.1c0-12.4-10.6-19.5-30.1-27.5c-18.6-8-30.6-13.3-35.4-26.6
+            c-7.5,18.2-42.5,103.6-50.9,121.8h-18.6l4.4-8.4l4-7.5v-0.4c4.9-9.3,11.5-23.9,17.7-38.1l-36.3-87.7c-0.4-0.4-0.9-1.8-2.2-4.4
+            c-2.7-6.2-5.3-12.4-13.3-15.1c-4-1.3-8.9-2.2-13.7-2.2c-12,0-27,5.3-27,23c-0.4,13.3,8.4,15.5,31.9,27c19,8.4,36.8,17.3,36.8,38.5
+            c0,35.4-35,41.6-51.8,41.6c-13.3,0-26.1-3.1-34.1-8L319.3,467L319.3,467z M61.1,357.6l0.4,15.5v0.9l0,0c0.4-0.4,0.4-1.3,0.9-1.8
+            c8-8.4,17.7-16.8,41.2-16.8c22.6,0,36.8,19,37.6,31V471v0.4v21.3h-19v-25.2v-72.2c0-15.1-13.3-25.7-29.2-25.7
+            c-13.3,0-30.6,12-31,24.4v77.5v0.4v20.8H42.5v-21.3v-96.1v-17.7h3.5h10.6L61.1,357.6L61.1,357.6z"></path>
+            </svg>
+          </a> </div>
+      </div>
+    </article>
+  </header>
+  <main id="main-cnt">
+<section class="accordion-section py-75">
+    <div class="container">
+        <h1 class="main-title mb-50">Accordion</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Section 1
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Section 2
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Section 3
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel-group" id="accordion-two" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="sndacc-heading-two">
+                            <h4 class="panel-title"> 
+                                <a role="button" data-toggle="collapse" data-parent="#accordion-two" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                  <span class="img-span"><img class="image-icon " src="images/suitcase.png"></span>  Section 1
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sndacc-heading-two">
+                            <div class="panel-body">
+                            <div class="panel-body-content">
+                         <div class="img-div">
+                         <img src="images/profile.png">
+                         </div>
+                         <div class="content">
+                            <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                         </div>
+                         <div class="icon-div">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                         </div>
+                            </div>  
+                            <div class="panel-body-content">
+                                <div class="img-div">
+                                <img src="images/profile.png">
+                                </div>
+                                <div class="content">
+                                   <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                </div>
+                                <div class="icon-div">
+                                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                                   </div>  
+                                   <div class="panel-body-content">
+                                    <div class="img-div">
+                                    <img src="images/profile.png">
+                                    </div>
+                                    <div class="content">
+                                       <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                    </div>
+                                    <div class="icon-div">
+                                       <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </div>
+                                       </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="sndacc-heading-three">
+                            <h4 class="panel-title"> 
+                                <a role="button" data-toggle="collapse" data-parent="#accordion-two" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                  <span class="img-span"><img class="image-icon " src="images/suitcase.png"></span>  Section 2
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sndacc-heading-three">
+                            <div class="panel-body">
+                                <div class="panel-body">
+                                    <div class="panel-body-content">
+                                 <div class="img-div">
+                                 <img src="images/profile.png">
+                                 </div>
+                                 <div class="content">
+                                    <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                 </div>
+                                 <div class="icon-div">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                 </div>
+                                    </div>  
+                                    <div class="panel-body-content">
+                                        <div class="img-div">
+                                        <img src="images/profile.png">
+                                        </div>
+                                        <div class="content">
+                                           <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                        </div>
+                                        <div class="icon-div">
+                                           <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </div>
+                                           </div>  
+                                           <div class="panel-body-content">
+                                            <div class="img-div">
+                                            <img src="images/profile.png">
+                                            </div>
+                                            <div class="content">
+                                               <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                            </div>
+                                            <div class="icon-div">
+                                               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </div>
+                                               </div>    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="sndacc-heading-four">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-two" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <span class="img-span"><img class="image-icon " src="images/suitcase.png"></span>  Section 3
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sndacc-heading-four">
+                            <div class="panel-body">
+                                <div class="panel-body">
+                                    <div class="panel-body-content">
+                                 <div class="img-div">
+                                 <img src="images/profile.png">
+                                 </div>
+                                 <div class="content">
+                                    <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                 </div>
+                                 <div class="icon-div">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                 </div>
+                                    </div>  
+                                    <div class="panel-body-content">
+                                        <div class="img-div">
+                                        <img src="images/profile.png">
+                                        </div>
+                                        <div class="content">
+                                           <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                        </div>
+                                        <div class="icon-div">
+                                           <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </div>
+                                           </div>  
+                                           <div class="panel-body-content">
+                                            <div class="img-div">
+                                            <img src="images/profile.png">
+                                            </div>
+                                            <div class="content">
+                                               <h4 class="profile-title">Lorem Ipsum Dolor</h4>
+                                               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, eveniet placeat incidunt quis consequatur neque corrupti </p>
+                                            </div>
+                                            <div class="icon-div">
+                                               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </div>
+                                               </div>    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  </main>
+  <footer id="footer">
+    <article>
+      <div class="container pt50 pb50">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-12 col-xs-12">
+            <h3 class="ftr-head mt-xs-20">Company</h3>
+            <ul class="list-unstyled footer-txt">
+              <li><a href="/navigate-your-next.html" title="Navigate your next">Navigate your next</a></li>
+              <li><a href="/about.html" title="About Infosys">About Us</a></li>
+              <li><a href="/careers/" title="Careers">Careers</a></li>
+              <li><a href="/about/corporate-responsibility.html" title="Corporate Responsibility">Corporate
+                  Responsibility</a></li>
+              <li><a href="/investors.html" title="Investors">Investors</a></li>
+              <li><a href="/newsroom.html" title="Newsroom">Newsroom</a></li>
+              <li><a href="https://alumni.infosys.com/app-welcome" target="_blank" title="Alumni">Alumni </a> </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-12 col-xs-12">
+            <h3 class="ftr-head mt-xs-20">Subsidiaries</h3>
+            <ul class="list-unstyled footer-txt">
+              <li><a href="https://www.edgeverve.com/" title="EdgeVerve Systems" target="_blank">EdgeVerve
+                  Systems</a></li>
+              <li><a href="https://www.infosysbpm.com/" title="Infosys BPM" target="_blank">Infosys BPM</a> </li>
+              <li><a href="/services/consulting.html" title="Infosys Consulting">Infosys Consulting</a></li>
+              <li><a href="https://www.infosyspublicservices.com/" title="Infosys Public Services"
+                  target="_blank">Infosys Public Services</a></li>
+              <li><a href="http://www.skava.com/" title="Skava Systems" target="_blank">Skava Systems</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-12 col-xs-12">
+            <h3 class="ftr-head mt-xs-20">Programs</h3>
+            <ul class="list-unstyled footer-txt">
+              <li><a href="/infosys-foundation.html" title="Infosys Foundation" target="_blank">Infosys
+                  Foundation</a></li>
+              <li><a href="http://www.infosys.org/infosys-foundation-usa" title="Infosys Foundation USA"
+                  target="_blank">Infosys Foundation USA</a></li>
+              <li><a href="http://www.infosys-science-foundation.com" title="Infosys Science Foundation"
+                  target="_blank">Infosys Science Foundation</a></li>
+              <li><a href="/leadership-institute.html" title="Infosys Leadership Institute">Infosys Leadership
+                  Institute</a></li>
+            </ul>
+          </div>
+          <div class="clearfix visible-sm"></div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-12 col-xs-12">
+            <h3 class="ftr-head mt-xs-20">Support</h3>
+            <ul class="list-unstyled footer-txt">
+              <li><a href="/terms-of-use.html" title="Terms of Use">Terms of Use</a></li>
+              <li><a href="/privacy-statement.html" title="Privacy Statement">Privacy Statement</a></li>
+              <li><a href="/privacy-statement/cookie-policy.html" title="Cookie Policy">Cookie Policy</a></li>
+              <li><a href="/safe-harbor-provision.html" title="Safe Harbour Provision">Safe Harbour
+                  Provision</a></li>
+              <li><a href="/trademarks.html" title="Trademarks">Trademarks</a></li>
+              <li><a href="/sitemap.html" title="Site Map">Site Map</a></li>
+              <li><a href="/investors/corporate-governance/documents/statement-under-modern-slavery-act.pdf" title="Modern
+                Slavery Statement" target="_blank">Modern
+                  Slavery Statement</a> </li>
+              <li><a href="/payment-information-suppliers.html" title="Payment Guide for Suppliers">Payment
+                  Guide for Suppliers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-12 col-xs-12">
+            <h3 class="ftr-head mt-sm-20">Connect with us</h3>
+            <ul class="list-inline footer-txt">
+              <li> <a title="Follow us on Twitter" target="_blank" href="https://twitter.com/Infosys"> <img
+                    src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/twitter.svg"
+                    width="16" height="16" alt="Twitter" /> </a> </li>
+              <li> <a title="Follow us on Facebook" target="_blank" href="https://www.facebook.com/Infosys"> <img
+                    src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/facebook.svg"
+                    width="16" height="16" alt="Facebook" /> </a> </li>
+              <li> <a title="Follow us on LinkedIn" target="_blank" href="https://www.linkedin.com/company/infosys">
+                  <img
+                    src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/linkedin.svg"
+                    width="16" height="16" alt="LinkedIn" /> </a> </li>
+              <li> <a title="Follow us on YouTube" target="_blank" href="http://youtube.com/user/infosys"> <img
+                    src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/youtube.svg"
+                    width="16" height="16" alt="YouTube" /> </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ptb15 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-6 col-12 col-xs-12">
+              <p class="mb0">Copyright &copy; 2022 Infosys Limited</p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 col-xs-12">
+              <div class="pull-right pull-left-xs mt-xs-20">
+                <div class="country">
+                  <div class="select-country"><a href="javascript:void(0);" title="Select Country/region"
+                      aria-label="Click to Select Country/region" aria-haspopup="true" aria-expanded="false">Select
+                      Country/region <span class="down-arrow"></span> </a></div>
+                  <div class="option-country">
+                    <ul class="list-unstyled country-align">
+                      <li><a href="/australia.html" title="Australia">Australia</a></li>
+                      <li><a href="/at-en/" title="Austria">Austria</a></li>
+                      <li><a href="/be-en/" title="Belgium">Belgium</a></li>
+                      <li><a href="/br/" title="Brazil">Brazil</a></li>
+                      <li><a href="/bg-en/" title="Bulgaria">Bulgaria</a></li>
+                      <li><a href="/powering-digital-canada.html" title="Canada">Canada</a></li>
+                      <li><a href="/contact/country.html?region=Americas&subsidiary=Infosys#Chile"
+                          title="Chile">Chile</a></li>
+                      <li><a href="/cn/" title="China">China</a></li>
+                      <li><a href="/contact/country.html?region=Americas&subsidiary=Infosys#Costa%2520rica"
+                          title="Costa Rica">Costa Rica</a></li>
+                      <li><a href="/hr-en/" title="Croatia">Croatia</a></li>
+                      <li><a href="/cz-en/" title="Czech">Czech</a></li>
+                      <li><a href="/dk-en/" title="Denmark">Denmark</a></li>
+                      <li><a href="/ee-en/" title="Estonia">Estonia</a></li>
+                      <li><a href="/fi-en/" title="">Finland</a></li>
+                      <li><a href="/fr-en/" title="France">France</a></li>
+                      <li><a href="/de/" title="Germany">Germany</a></li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#Hong%20Kong"
+                          title="Hong Kong">Hong Kong</a></li>
+                      <li><a href="/hu-en/" title="Hungary">Hungary</a></li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#India"
+                          title="India">India</a></li>
+                      <li><a href="/ie-en/" title="Ireland">Ireland</a></li>
+                      <li><a href="/it-en/" title="Italy">Italy</a></li>
+                      <li><a href="/jp/" title="Japan">Japan</a></li>
+                      <li><a href="/contact/country.html?region=Europe&subsidiary=Infosys#Liechtenstein"
+                          title="Liechtenstein">Liechtenstein</a></li>
+                      <li><a href="/lv-en/" title="Latvia">Latvia</a></li>
+                      <li><a href="/lt-en/" title="Lithuania">Lithuania</a></li>
+                      <li><a href="/lu-en/" title="Luxembourg">Luxembourg</a></li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#Malaysia"
+                          title="Malaysia">Malaysia</a></li>
+                      <li><a
+                          href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&subsidiary=Infosys#Mauritius"
+                          title="Mauritius">Mauritius</a></li>
+                      <li><a href="/mx/" title="Mexico">Mexico</a></li>
+                      <li><a href="/australia.html" title="New Zealand">New
+                          Zealand</a></li>
+                      <li><a href="/no-en/" title="Norway">Norway</a></li>
+                      <li><a href="/contact/country.html?region=Americas&subsidiary=Infosys#Peru" title="Peru">Peru</a>
+                      </li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#Philippines"
+                          title="Philippines">Philippines</a></li>
+                      <li><a href="/pl-en/" title="Poland">Poland</a></li>
+                      <li><a href="/pt-en/" title="Portugal">Portugal</a></li>
+                      <li><a href="/ro-en/" title="Romania">Romania</a></li>
+                      <li><a href="/ru-en/" title="Russia">Russia</a></li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#Singapore"
+                          title="Singapore">Singapore</a></li>
+                      <li><a href="/sk-en/" title="Slovakia">Slovakia</a></li>
+                      <li><a href="/sl-en/" title="Slovenia">Slovenia</a></li>
+                      <li><a
+                          href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&subsidiary=Infosys#South%20Africa"
+                          title="South Africa">South Africa</a></li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#South%20Korea"
+                          title="South Korea">South Korea</a></li>
+                      <li><a href="/es-en/" title="Spain">Spain</a></li>
+                      <li><a href="/se-en/" title="Sweden">Sweden</a></li>
+                      <li><a href="/ch-en/" title="Switzerland">Switzerland</a></li>
+                      <li><a href="/contact/country.html?region=Asia_X32_Pacific&subsidiary=Infosys#Taiwan"
+                          title="Taiwan">Taiwan</a></li>
+                      <li><a href="/nl-en/" title="The Netherlands">The Netherlands</a></li>
+                      <li><a
+                          href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&subsidiary=Infosys#United%20Arab%20Emirates"
+                          title="United Arab Emirates">United Arab Emirates</a></li>
+                      <li><a href="/gb-en/" title="United Kingdom (UK)">United Kingdom (UK)</a></li>
+                      <li><a href="/americas.html" title="United States">United States</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </footer>
+  <a href="javascript:void(0);" class="scroll-up" title="Scroll top">
+    <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/arrow_up.png"
+      alt="Arrow up" class="img-responsive" /> </a>
+  <script src="js/custom.js"></script>
+  <link rel="stylesheet" href="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-footer.css">
+  <script src="https://www.infosys.com/etc.clientlibs/infosys-web/clientlibs/clientlib-footer.js"></script>
+
+
+</body>
+
+</html>
